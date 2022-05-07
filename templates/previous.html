@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-previous">
+  <h1>Previous Tests</h1>
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Users</th>
+        <th scope="col">Duration (seconds)</th>
+        <th scope="col">RP (AVG)</th>
+        <th scope="col">Bandwidth (Mbs)</th>
+        <th scope="col">CPU</th>
+        <th scope="col">RAM</th>
+        <th scope="col">Hostname</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for test in tests %}
+      <tr>
+        <td>{{ test[2] }}</td>
+        <td>{{ test[1] }}</td>
+        <td>{{ test[3] }}s</td>
+        <td>{{ test[6] }}s</td>
+        <td>{{ test[7] }}</td>
+        <td>{{ test[4] }}%</td>
+        <td>{{ test[5] }}%</td>
+        <td>{{ test[8] }}</td>
+
+
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

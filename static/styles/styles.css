@@ -1,0 +1,126 @@
+/* Normalize */
+body {
+  background-color: #009bd6;
+  margin: 0;
+  padding: 0;
+  min-width: fit-content;
+}
+
+.container-previous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation bar */
+nav  {
+  align-items: center;
+  background-color: #00b8ff;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.stop {
+  background-color: red;
+  border-radius: 25px;
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  margin-right: 2rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  height: 60%;
+}
+
+.previous {
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  margin-right: 2rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  height: 60%;
+}
+
+.stop:hover, .previous:hover, .home,  .home:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Form */
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h1 {
+  font-size: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.input-group {
+  width: 60%;
+}
+
+#hostname {
+  width: 100%;
+}
+
+.input-group {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group input[type="text"] {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.submit {
+  background-color: #00b8ff;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 3rem;
+  line-height: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  width: 30%;
+}
+
+/* h1 */
+h1,
+h2,
+h3 {
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h2 {
+  opacity: 0.8;
+}
+
+h3 {
+    opacity: 0.75
+}
+
+/* Table */
+.table {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
